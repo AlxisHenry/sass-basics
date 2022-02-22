@@ -1,4 +1,4 @@
-**Vous pouvez accéder à ce projet en cliquant [ici](https://alxishenry.github.io/learn-to-use-sass/).** *( [alxishenry.github.io/learn-to-use-sass/ ]() )*
+**Vous pouvez accéder à ce projet en cliquant [ici](https://alxishenry.github.io/learn-to-use-sass/).** *( [https://alxishenry.github.io/Learn-to-Use-SASS/index.html]() )*
 
 ---
 

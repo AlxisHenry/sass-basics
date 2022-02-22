@@ -1,0 +1,32 @@
+/*!
+* KNACSS Reborn: Just keep it simple!
+* @author: Alsacreations
+* v8.2 2022/01
+* Licence WTFPL http://www.wtfpl.net/
+*/
+
+// IMPORTANT : Seuls les fichiers "Noyau" et "Utilitaires" sont importés par défaut. Ajoutez les fichiers de composants si nécessaires dans votre projet.
+
+// NOYAU
+@import "sass/abstracts/variables-sass";
+@import "sass/abstracts/mixins-sass";
+
+@import "sass/base/reset-base";
+@import "sass/base/reset-accessibility";
+@import "sass/base/reset-forms";
+@import "sass/base/reset-print";
+@import "sass/base/layout";
+
+// UTILITAIRES
+@import "sass/utils/utils-global";
+@import "sass/utils/utils-font-sizes";
+@import "sass/utils/utils-spacers";
+@import "sass/utils/grillade";
+
+// COMPOSANTS (à ajouter au besoin)
+// @import "sass/components/button";
+@import "sass/components/burger";
+@import "sass/components/checkbox";
+@import "sass/components/radio";
+@import "sass/components/select";
+@import "sass/components/quote";

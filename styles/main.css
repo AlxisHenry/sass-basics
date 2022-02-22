@@ -1,0 +1,34 @@
+.change-color {
+  color: #a953be;
+}
+
+.is-opened {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: cornsilk;
+  display: flex;
+}
+
+.color-pair-item {
+  background-color: rgba(255, 187, 229, 0.527);
+}
+
+.contains-burger-menus {
+  left: 50%;
+}
+
+.menu-list {
+  width: 100vw;
+  padding: 25px;
+  color: #e0bfd9;
+  text-decoration: underline;
+}
+.menu-list:hover {
+  color: #ffd08a;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Sass - Henry Alexis</title>
-</head>
-<body>
+  </head>
+  <body class="hidden-overflow-content">
+    <nav class="hidden">
+
+        <div class="flex flex-col justify-center contains-burger-menus">
+
+            <div class="menu-list text-center">Qui suis-je ?</div>
+            <div class="menu-list text-center">Qu'est-ce que Sass ?</div>
+            <div class="menu-list text-center">Nous contacter</div>
+
+        </div>
+
+
+    </nav>
+
+    <div class="flex justify-center mgto my-16">
+      <h1 class="change-color text-uppercase my-16 text-20">
+        Découverte de Sass par HENRY Alexis
+      </h1>
+    </div>
     
-    <h1 class="h1-title"> Découverte de Sass par HENRY Alexis </h1>
+    <div class="my-20 flex justify-center align-middle contain-menu-burger">
+        <button class="burger-button " type="button" role="button" aria-label="open/close navigation"><i></i></button>  
+    </div>
 
-    <div class="div-red"></div>
-    <div class="div-blue"></div>
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
+    <div class="grid-sass grid grid-cols-1 gap-1 sm:gap-3 lg:gap-5"></div>
 
+    <script>
+      const GetGrid = document.querySelector(".grid-sass");
 
-</body>
+      const GridElement = `<div class="grid-element flex justify-center"><img src="./assets/icon/favicon.ico" alt=""></div>`;
+
+      for (let i = 0; i < 1; i++) {
+        GetGrid.insertAdjacentHTML("beforeend", GridElement);
+        const GetGridElement = document.querySelectorAll(".grid-element");
+        if (i === 3 || i === 0) {
+          GetGridElement[i].className += " color-pair-item";
+          GetGridElement[i].className += " lg:col-span-full";
+        }
+      }
+
+      function numIsPair(n) {
+        return n & 1 ? false : true;
+      }
+
+      (function () {
+        // old browser or not ?
+        if (!("querySelector" in document && "addEventListener" in window)) {
+          return;
+        }
+        window.document.documentElement.className += " js-enabled";
+
+        function toggleNav() {
+          // Define targets by their class or id
+          var button = document.querySelector(".burger-button");
+          var target = document.querySelector("body > nav");
+
+          // click-touch event
+          if (button) {
+            button.addEventListener(
+              "click",
+              function (e) {
+                button.classList.toggle("is-active");
+                target.classList.toggle("is-opened");
+                e.preventDefault();
+              },
+              false
+            );
+          }
+        } // end toggleNav()
+
+        toggleNav();
+      })();
+    </script>
+  </body>
 </html>

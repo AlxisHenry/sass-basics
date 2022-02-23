@@ -10,11 +10,9 @@ Pour l'installation de Sass, il faut utiliser les lignes de commandes suivantes:
 
 <br>
 
-``sudo apt-get install curl``<br><br>
+``sudo apt update && apt upgrade -y`` <br>
 
-``curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -``<br><br>
-
-``npm install -g sass``
+``sudo apt-get install sass``
 
 <br>
 
